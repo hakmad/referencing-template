@@ -1,0 +1,40 @@
+% Essay file.
+
+% Preamble.
+%{{{
+
+\documentclass[a4paper,oneside,11pt]{article}
+
+\usepackage[margin=2.5cm]{geometry}
+
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Modify for different styles (e.g. APA, Chicago, etc.).
+\usepackage{biblatex}
+\addbibresource{bibliography.bib}
+
+\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	urlcolor=blue,
+}
+
+\pagenumbering{gobble}
+
+\begin{document}
+
+%}}}
+
+% Epilogue.
+%{{{
+
+\nocite{*}
+
+\printbibliography
+
+\end{document}
+
+%}}}
